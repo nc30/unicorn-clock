@@ -23,7 +23,7 @@ while True:
     image = Image.new("RGB", (width, height), (0, 0, 0))
     draw = ImageDraw.Draw(image)
     now = datetime.datetime.now()
-    draw.text((0, 0), '{0: 2}'.format(now.hour), fill=COLOR, font=font)
+    draw.text((0, 0), '{0:02}'.format(now.hour), fill=COLOR, font=font)
     draw.text((0, 8), '{0:02}'.format(now.minute), fill=COLOR, font=font)
 
     unicornhathd.clear()
